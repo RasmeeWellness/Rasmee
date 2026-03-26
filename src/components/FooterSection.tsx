@@ -1,34 +1,33 @@
-import { Instagram, Mail, Calendar, Facebook, FileText } from "lucide-react";
+import { Instagram, Mail, Facebook } from "lucide-react";
+import { Link } from "react-router-dom";
+import butterflyLogo from "@/assets/butterfly-logo.png";
 
 const socials = [
-  { icon: Instagram, href: "https://www.instagram.com/beth.frankos?igsh=MXR4bHh6a3BhYzk4bw==", label: "Instagram" },
-  { icon: Mail, href: "mailto:bethfrankosfreelance@gmail.com", label: "Email" },
-  { icon: Calendar, href: "https://calendly.com/bethfrankosfreelance/15min", label: "Book a Call" },
-  { icon: Facebook, href: "https://www.facebook.com/share/1AgkuwNfDa/", label: "Facebook" },
-  { icon: FileText, href: "https://docs.google.com/forms/d/e/1FAIpQLScbXZRCufQdGBA1cxb3vYpKw0mb56yFdb-6u1QwReb8RZwT2w/viewform?usp=header", label: "Inquiry Form" },
+  { icon: Instagram, href: "https://www.instagram.com/gracefulrayoflight?igsh=cnVvZTZuZmwyaW01", label: "Instagram" },
+  { icon: Facebook, href: "https://www.facebook.com/share/14Z2Z5jNxg8/", label: "Facebook" },
+  { icon: Mail, href: "mailto:rasmeerashika007@gmail.com", label: "Email" },
 ];
 
 const FooterSection = () => {
   return (
-    <footer className="py-16 bg-espresso text-cream">
+    <footer className="py-16 bg-card border-t border-border">
       <div className="section-container text-center">
-        <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
-          Ready to <span className="text-gradient-amber">get started?</span>
+        <img
+          src={butterflyLogo}
+          alt="Rasmee Wellness"
+          className="w-16 h-16 mx-auto mb-4 object-contain"
+          loading="lazy"
+          width={64}
+          height={64}
+        />
+        <h2 className="font-display text-2xl font-semibold text-foreground mb-2">
+          Rasmee Wellness & Metamorphosis Travel
         </h2>
-        <p className="font-body text-cream/60 mb-8 max-w-md mx-auto">
-          Let's talk about where you are and where you want to go.
+        <p className="font-body text-sm text-muted-foreground mb-8 max-w-md mx-auto">
+          Yoga, bodywork, energy work, tarot guidance & transformative retreats.
         </p>
 
-        <a
-          href="https://calendly.com/bethfrankosfreelance/15min"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center justify-center px-8 py-4 rounded-lg font-body font-semibold text-lg bg-terra text-accent-foreground hover:bg-terra-glow transition-all duration-300 mb-12"
-        >
-          Book Your Free 15-Min Call
-        </a>
-
-        <div className="flex items-center justify-center gap-5 mb-10">
+        <div className="flex items-center justify-center gap-5 mb-8">
           {socials.map(({ icon: Icon, href, label }) => (
             <a
               key={label}
@@ -36,27 +35,25 @@ const FooterSection = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={label}
-              className="w-11 h-11 rounded-full border border-cream/20 flex items-center justify-center hover:border-terra hover:text-terra transition-all duration-300"
+              className="w-11 h-11 rounded-full border border-border flex items-center justify-center hover:border-primary hover:text-primary transition-all duration-300"
             >
               <Icon className="w-5 h-5" />
             </a>
           ))}
         </div>
 
-        <a
-          href="https://bffreelance-about.carrd.co/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="font-body text-sm text-cream/50 hover:text-terra transition-colors underline underline-offset-4"
-        >
-          Learn more about Beth
-        </a>
-
-        <div className="mt-8 pt-8 border-t border-cream/10">
-          <p className="font-body text-xs text-cream/30">
-            © {new Date().getFullYear()} Beth Frankos Freelance LLC. All rights reserved.
-          </p>
+        <div className="flex items-center justify-center gap-6 mb-8 font-body text-sm text-muted-foreground">
+          <Link to="/" className="hover:text-primary transition-colors">Home</Link>
+          <Link to="/services" className="hover:text-primary transition-colors">Services</Link>
+          <Link to="/retreat" className="hover:text-primary transition-colors">Retreat</Link>
+          <Link to="/phototherapy" className="hover:text-primary transition-colors">Phototherapy</Link>
         </div>
+
+        <div className="glow-line max-w-xs mx-auto mb-6" />
+
+        <p className="font-body text-xs text-muted-foreground">
+          © {new Date().getFullYear()} Rasmee Wellness. All rights reserved.
+        </p>
       </div>
     </footer>
   );
