@@ -1,13 +1,15 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import heroBg from "@/assets/georgia-tree-yoga.jpg";
+import heroBgMobile from "@/assets/reiki-mobile-hero.jpg";
 import butterflyLogo from "@/assets/butterfly-logo.png";
 
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0">
-        <img src={heroBg} alt="" className="w-full h-full object-cover" width={1920} height={1080} />
+        <img src={heroBg} alt="" className="hidden md:block w-full h-full object-cover" width={1920} height={1080} />
+        <img src={heroBgMobile} alt="" className="block md:hidden w-full h-full object-cover" width={653} height={564} />
         <div className="absolute inset-0 bg-background/75" />
       </div>
 
