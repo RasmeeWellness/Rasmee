@@ -67,13 +67,13 @@ const HeroSection = () => {
         >
           <Link
             to="/services"
-            className="inline-flex items-center justify-center px-8 py-4 rounded-lg font-body font-semibold text-lg bg-primary text-primary-foreground hover:bg-teal-glow transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5"
+            className="inline-flex items-center justify-center px-8 py-4 rounded-lg font-body font-semibold text-lg border-2 border-border text-foreground hover:border-primary hover:text-primary transition-all duration-300"
           >
             Explore Services
           </Link>
           <Link
             to="/retreat"
-            className="inline-flex items-center justify-center px-8 py-4 rounded-lg font-body font-semibold text-lg border-2 border-border text-foreground hover:border-primary hover:text-primary transition-all duration-300"
+            className="inline-flex items-center justify-center px-8 py-4 rounded-lg font-body font-semibold text-lg bg-primary text-primary-foreground hover:bg-teal-glow transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5"
           >
             View Retreat
           </Link>
