@@ -192,7 +192,7 @@ const Retreat = () => {
           <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-6">
             Ready to Join?
           </h2>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
             <a
               href="https://docs.google.com/forms/d/e/1FAIpQLScQwjV8zS23z4mdVkL2ekcGDcCKLNQevvni-jh55amff1nLuQ/viewform?pli=1"
               target="_blank"
@@ -208,6 +208,30 @@ const Retreat = () => {
             >
               Contact Us
             </a>
+          </div>
+
+          <div className="border-t border-border pt-10">
+            <p className="font-body text-muted-foreground mb-6">
+              Secure your spot with a deposit
+            </p>
+            <style>{`.pp-7ELRLE6RDQ25Q{text-align:center;border:none;border-radius:0.25rem;min-width:11.625rem;padding:0 2rem;height:2.625rem;font-weight:bold;background-color:#FFD140;color:#000000;font-family:"Helvetica Neue",Arial,sans-serif;font-size:1rem;line-height:1.25rem;cursor:pointer;}`}</style>
+            <form
+              action="https://www.paypal.com/ncp/payment/7ELRLE6RDQ25Q"
+              method="post"
+              target="_blank"
+              style={{ display: "inline-grid", justifyItems: "center", alignContent: "start", gap: "0.5rem" }}
+            >
+              <input className="pp-7ELRLE6RDQ25Q" type="submit" value="Pay Deposit" />
+              <img src="https://www.paypalobjects.com/images/Debit_Credit_APM.svg" alt="cards" />
+              <section style={{ fontSize: "0.75rem" }}>
+                Powered by{" "}
+                <img
+                  src="https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-wordmark-color.svg"
+                  alt="paypal"
+                  style={{ height: "0.875rem", verticalAlign: "middle" }}
+                />
+              </section>
+            </form>
           </div>
         </div>
       </section>
