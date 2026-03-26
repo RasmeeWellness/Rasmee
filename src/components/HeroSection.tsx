@@ -55,7 +55,6 @@ const HeroSection = () => {
           transition={{ duration: 0.6, delay: 0.7 }}
           className="max-w-2xl mx-auto text-lg md:text-xl text-muted-foreground leading-relaxed mb-10 font-body"
         >
-          Yoga, bodywork, energy work and tarot guidance. Transformative retreats in Costa Rica.
         </motion.p>
 
         <motion.div
