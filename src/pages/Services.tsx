@@ -8,7 +8,7 @@ const services = [
     schedule: "Mondays at 6pm · Thursdays at 9:30am",
     note: "Check fb and insta @Kirkland Art Center for schedule changes.",
     price: "$10 per class",
-    bookingUrl: "https://kirklandartscenter.org",
+    bookingUrl: "https://share.google/gf6dUEwYqsF3fGvvZ",
   },
   {
     title: "IHYT Bodywork",
