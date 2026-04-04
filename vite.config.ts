@@ -19,4 +19,4 @@ export default defineConfig(({ mode }): UserConfig => ({
     },
     dedupe: ["react", "react-dom", "react/jsx-runtime", "react/jsx-dev-runtime"],
   },
-});
+}));
