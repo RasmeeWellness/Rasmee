@@ -87,7 +87,7 @@ const Retreat = () => {
             className="flex items-center justify-center gap-4 font-body text-sm text-muted-foreground"
           >
             <span className="flex items-center gap-1"><MapPin className="w-4 h-4 text-primary" /> Nosara, Costa Rica</span>
-            <span className="flex items-center gap-1"><Calendar className="w-4 h-4 text-primary" /> Aug 1-6, 2026 & Jan 31–Feb 5, 2027</span>
+            <span className="flex items-center gap-1"><Calendar className="w-4 h-4 text-primary" /> Aug 2-7, 2026 & Jan 31–Feb 5, 2027</span>
           </motion.div>
         </div>
       </section>
